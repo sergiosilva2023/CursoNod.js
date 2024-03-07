@@ -6,7 +6,7 @@ const app = express()
 
 // criar as rotas da app
 app.get("/", function(req, res){
-    res.send("Seja bem-vindo na minha aplicação!")
+    res.sendFile(__dirname+"/index.html")
 })
 app.get("/sobre", function(req, res){
     res.send("Minha pagina sobre a minha app")
